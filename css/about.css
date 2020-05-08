@@ -1,0 +1,76 @@
+/* ----------------------------Estilos para el about me---------------------------- */
+.sobreMi{
+    padding: 5% 0 0 0;
+    color: #323232;
+}
+.descripcion {
+    padding: 5% 5% 0% 0;
+}
+.foto {
+    text-align: center;
+}
+.sobreMi img {
+    border-radius: 5%;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+.sobreMi p {
+    text-align: justify;
+    padding: 4% 0 0 0;
+}
+.herramientas{
+    color: #323232;
+    text-align: center;
+}
+.herramientas p {
+    text-align: justify;
+    padding: 0 10%;
+}
+.herramientas h3 {
+    margin-left: 10%;
+}
+.uxUi img {
+    margin: -50px 0 0 30px;
+}
+.uxUi{
+display: flex;
+align-items: center
+}
+
+h3{
+    padding-bottom: 20px;
+}
+
+
+/* ----------------------------Shine de proyectos---------------------------- */
+.sobreMi figure {
+  position: relative;
+}
+.sobreMi figure::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 47%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.sobreMi figure:hover::before {
+    -webkit-animation: shine .75s;
+    animation: shine .75s;
+}
+@-webkit-keyframes shine {
+    100% {
+        left: 50%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 50%;
+    }
+}
+

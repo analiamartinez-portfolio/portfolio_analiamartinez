@@ -1,0 +1,238 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'SF Pro Rounded', sans-serif;
+}
+.body {
+  background-color: #f9f9f9; 
+}
+
+/* ----------------------------Estilos barra de navegación---------------------------- */
+.navegador {
+  background-color: #b792b4;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 0 10px;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+.navegador img {
+  padding: 0 20px;
+  width: 11%;
+}
+.navegador ul {
+  list-style-type: none; 
+  text-align: center;
+  margin-right: 15px;
+}
+.navegador li {
+  text-decoration: none;
+  display: inline-block;
+}
+.navegador li a {
+  color: white;
+  text-align: center;
+}
+.navegador a:hover {
+  text-decoration: none;
+}
+.space{
+  margin-right: 40px;
+}
+.links{
+    padding-top: 12px;
+}
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: .9em;
+    margin: 20px 10px 0 10px;
+}
+.linkIn{
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+}
+.medium{
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+}
+.google{
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+}
+.links a:hover{
+  color: white;
+}
+
+/* ----------------------------Estilos para el hero---------------------------- */
+h1{
+  text-align: center;
+  padding: 42px 0;
+  color: #323232;
+}
+
+/* ----------------------------Estilos para los proyectos---------------------------- */
+article{
+  padding: 50px 0;
+}
+.proyectos{
+  color: #323232;
+}
+.proyectoImagen{
+  text-align: center;
+}
+.proyectoDescripcion{
+  margin: 0 40px;
+  padding: 140px 20px 0px 20px;
+  text-align: justify;
+}
+.proyectos a {
+  text-decoration: none;
+  color: white; 
+}
+.proyectos a:hover {
+    text-decoration: none;
+    color: white;
+}
+.proyectos button {
+  padding: 5px 15px;
+  border: 2px solid #702b85;
+  background-color:#702b85;
+  border-radius: 5px;
+}
+/* .proyectos button:hover {
+  background-color:#702b85;
+} */
+
+/* ----------------------------Estilos para el footer---------------------------- */
+.footer{
+    background-color: #b792b4;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+/* ----------------------------Efecto del hero---------------------------- */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 10% 0 0 0;
+    font-size: 50px;
+    color: #323232;
+    font-weight: bold;
+}
+
+.main {
+  animation-name: slideDown;
+  animation-duration: 2s;
+  margin-right: 8px;
+}
+
+.heading {
+  animation-name: slideUp;
+  animation-duration: 2s;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  80% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+
+}
+
+/* Efectos scroll */
+
+.features .mobile-inertia {
+    position: absolute;
+    right: 15;
+    bottom: calc(var(--section-padding) * -1);
+}
+.mobilOne {
+    padding-top: 120px;
+}
+.reveal.fadeInUp {
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: translateY(20px);
+}
+.reveal.fadeInUp.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+.reveal.fadeIn {
+    transition-property: opacity;
+    transition-duration: 2s;
+    opacity: 0;
+}
+.reveal.fadeIn.visible {
+    opacity: 1;
+}
+
+[data-delay='300ms'] {
+    transition-delay: 300ms;
+}
+
+[data-delay='600ms'] {
+    transition-delay: 600ms;
+}
+
+.mobile-screen {
+  display: none;
+ }
+  
+ @media only screen and (max-width: 768px) {
+  .mobile-screen {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .desktop-screen {
+    display: none;
+  }
+ } 
+
+
+
