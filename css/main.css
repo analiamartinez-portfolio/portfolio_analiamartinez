@@ -1,33 +1,47 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'SF Pro Rounded', sans-serif;
+  font-family: 'Airbnb Cereal App';
 }
 .body {
-  background-color: #f9f9f9; 
+  background: linear-gradient(to bottom, #353535, #656565);
+}
+.separador {
+background: #E8E3E3;
+height: 150px;
+}
+.separadorVertical{
+  border: 1.5px solid #E8E3E3;
+  background: #E8E3E3;
+  z-index: 2;
+  height: 450px;
+  margin: 15px 70px 0 30px;
+}
+.cabecerasSeccion {
+  color: white;
+  font-size: 1.3em;
+}
+.cabecerasSeccion p {
+  padding: 30px 0 0 170px;
+  font-weight: medium;
+  font-size: 1.2em;
+}
+.cabecerasSeccion hr {
+  border: .5px solid white;
+  width: 20%;
 }
 
 /* ----------------------------Estilos barra de navegación---------------------------- */
 .navegador {
-  background-color: #b792b4;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size: 1.5em;
-  padding: 0 10px;
-  align-items: center;
+  padding: 20px 20px 0 0;
   position: fixed;
+  text-align: right;
   z-index: 9999;
-  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
-}
-.navegador img {
-  padding: 0 20px;
-  width: 11%;
 }
 .navegador ul {
-  list-style-type: none; 
-  text-align: center;
+  list-style-type: none;
   margin-right: 15px;
 }
 .navegador li {
@@ -37,12 +51,10 @@
 .navegador li a {
   color: white;
   text-align: center;
+  font-weight: medium;
 }
 .navegador a:hover {
   text-decoration: none;
-}
-.space{
-  margin-right: 40px;
 }
 .links{
     padding-top: 12px;
@@ -53,6 +65,141 @@
     font-size: .9em;
     margin: 20px 10px 0 10px;
 }
+
+.links a:hover{
+  color: white;
+}
+
+/* ----------------------------Estilos para el hero---------------------------- */
+header{
+  background: linear-gradient(to bottom, #353535, #414141);
+  height: 55vw;
+}
+h1{
+  text-align: center;
+  color: white;
+}
+
+/* ----------------------------Estilos para los proyectos---------------------------- */
+article{
+  padding: 120px 0;
+}
+.proyectos{
+  color: white;
+}
+.proyectoImagen{
+  text-align: center;
+  display: flex;
+}
+.proyectoDescripcion{
+  margin: 0 40px;
+  padding: 20px 20px 0px 20px;
+  text-align: left;
+}
+.proyectoDescripcion p {
+  font-size: .90em;
+  font-weight: lighter;
+}
+.proyectos a {
+  text-decoration: none;
+  color: white; 
+}
+.proyectos a:hover {
+    text-decoration: none;
+    color: white;
+}
+.proyectos button {
+  padding: 5px 25px;
+  border: 2px solid #04ffb7;
+  background-color:#04ffb7;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-size: large;
+}
+.fotoProyectoBack {
+  z-index: 9999;
+  margin: 100px 0 0 200px;
+  width: 50%;
+}
+.fotoProyectoFront {
+  position: absolute;
+  display: flex;
+  width: 50%;
+}
+/* .bigText {
+  font-size: .75em;
+} */
+
+/* ----------------------------Estilos para el sobre mi---------------------------- */
+.sobreMi{
+    color: white;
+}
+.descripcion {
+  padding: 50px 0;
+}
+.foto {
+    text-align: right;
+    margin-left: 11%;
+}
+.sobreMi img {
+    border-radius: 5%;
+    width: 60%;
+}
+.sobreMi p {
+    text-align: justify;
+    padding: 0 4% 0 0;
+    text-align: left;
+    font-size: 1.2em;
+}
+.herramientas{
+    color: white;
+    text-align: center;
+}
+.herramientas p {
+    text-align: left;
+    padding: 0 25% 10% 24%;
+}
+.herramientas h4 {
+    margin-left: 24%;
+}
+.uxUi img {
+    margin: -50px 0 0 30px;
+}
+.uxUi{
+display: flex;
+align-items: center;
+margin-top: 25px;
+}
+h3{
+    padding-bottom: 20px;
+}
+
+/* ----------------------------Estilos para el footer---------------------------- */
+.footer{
+  background: linear-gradient(to bottom, #656565, #939393);
+  width: 100%;
+  padding: 0 0 50px 170px;
+  color: white;
+  
+}
+.redesSociales ul {
+  list-style-type: none;
+  margin-right: 15px;
+}
+.redesSociales li {
+  text-decoration: none;
+  margin-right: 15px;
+  display: inline-block;
+}
+.redesSociales a{
+  color: white;
+  text-align: center;
+  font-weight: medium;      
+}
+.redesSociales a:hover{
+  color: white;
+}
+
 .linkIn{
   background-color: blue;
   color: white;
@@ -71,74 +218,29 @@
   border-radius: 50%;
   padding: 2px 5px;
 }
-.links a:hover{
-  color: white;
-}
-
-/* ----------------------------Estilos para el hero---------------------------- */
-h1{
-  text-align: center;
-  padding: 42px 0;
-  color: #323232;
-}
-
-/* ----------------------------Estilos para los proyectos---------------------------- */
-article{
-  padding: 50px 0;
-}
-.proyectos{
-  color: #323232;
-}
-.proyectoImagen{
-  text-align: center;
-}
-.proyectoDescripcion{
-  margin: 0 40px;
-  padding: 140px 20px 0px 20px;
-  text-align: justify;
-}
-.proyectos a {
-  text-decoration: none;
-  color: white; 
-}
-.proyectos a:hover {
-    text-decoration: none;
-    color: white;
-}
-.proyectos button {
-  padding: 5px 15px;
-  border: 2px solid #702b85;
-  background-color:#702b85;
-  border-radius: 5px;
-}
-/* .proyectos button:hover {
-  background-color:#702b85;
-} */
-
-/* ----------------------------Estilos para el footer---------------------------- */
-.footer{
-    background-color: #b792b4;
-    width: 100%;
-    padding-bottom: 50px;
-}
 
 /* ----------------------------Efecto del hero---------------------------- */
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    padding: 10% 0 0 0;
-    font-size: 50px;
-    color: #323232;
-    font-weight: bold;
+  padding-top: 40vh;
+  text-align: center;
+  width: 100%;
+  font-size: 25px;
+  color: white;
+  font-family: 'Airbnb Cereal App'
 }
-
+.hero hr {
+  background: radial-gradient(grey 10%, black);
+  height: 4px;
+  width: 60%;
+  margin: 0 20%;
+  border-radius: 50%
+}
+.hero p {
+  margin-bottom: 0;
+}
 .main {
   animation-name: slideDown;
   animation-duration: 2s;
-  margin-right: 8px;
 }
 
 .heading {
@@ -188,24 +290,10 @@ article{
 }
 .mobilOne {
     padding-top: 120px;
+    margin-left: 90px;
 }
-.reveal.fadeInUp {
-    opacity: 0;
-    transition-property: all;
-    transition-duration: 1s;
-    transform: translateY(20px);
-}
-.reveal.fadeInUp.visible {
-    transform: translateY(0);
-    opacity: 1;
-}
-.reveal.fadeIn {
-    transition-property: opacity;
-    transition-duration: 2s;
-    opacity: 0;
-}
-.reveal.fadeIn.visible {
-    opacity: 1;
+.movilTwo {
+    margin-left: 180px;
 }
 
 [data-delay='300ms'] {
@@ -215,24 +303,6 @@ article{
 [data-delay='600ms'] {
     transition-delay: 600ms;
 }
-
-.mobile-screen {
-  display: none;
- }
-  
- @media only screen and (max-width: 768px) {
-  .mobile-screen {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .desktop-screen {
-    display: none;
-  }
- } 
 
 
 

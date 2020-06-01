@@ -6,91 +6,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="fonts/SF-Pro-Rounded-Bold.ttf" rel="stylesheet">
+    <link href="fonts/AirbnbCerealBold.ttf" rel="stylesheet">
     <title>Portfolio Analía</title>
 </head>
 
 <body>
     <div class="body">
-        <header>
+        <header id="cabecera">
             <nav class="navegador">
-                <img src="images/Group.png" alt="logo Analía">
                 <div class="links">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li class="space"><a href="about.html">Sobre mi</a></li>
-                        <li><a href="https://www.linkedin.com/in/anal%C3%ADambenavente/" class="linkIn"><i
-                                    class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="https://medium.com/@analiambenavente" class="medium"><i
-                                    class="fab fa-medium-m"></i></a></li>
-                        <li><a href="mailto:analiambenavente@gmail.com" class="google"><i class="fab fa-google"></i></a>
-                        </li>
+                        <li><a href="#cabecera" class="transicion">Home</a></li>
+                        <li><a href="#proyectos" class="transicion">Proyectos</a></li>
+                        <li><a href="#sobreMi" class="transicion">Sobre mi</a></li>
+                        <li><a href="#contacta" class="transicion">Contacta</a></li>
                     </ul>
                 </div>
             </nav>
-            <div class="row hero">
-                <p class="main">Diseñadora</p>
-                <p class="heading"> UX/UI</p>
+            <div class="hero">
+                <p class="main">Analía Martínez</p>
+                <hr>
+                <p class="heading"> UX/UI Designer</p>
             </div>
         </header>
+        <div class="separador"></div>
+        <div id="proyectos" class="cabecerasSeccion">
+            <p>Proyectos</p>
+            <hr>
+        </div>
         <section class="container proyectos">
 
             <article class="row">
-                <div class="col-sm-5 proyectoImagen">
-                    <img src="images/listravel.png" width="100%" alt="foto proyecto 1">
+                <div class="col-md-5 proyectoImagen">
+                    <img src="images/SIENTE BIENESTAR.png" alt="foto proyecto 1" class="fotoProyectoFront">
+                    <img src="images/SIENTE BIENESTAR 1.png" alt="foto proyecto 1" class="fotoProyectoBack">
                 </div>
+                <span class="separadorVertical"></span>
+                <div class="col-md-5 proyectoDescripcion bigText">
+                    <h4>Siente Bienestar</h4>
+                    <br>
+                    <p> El exceso de trabajo, estrés, las preocupaciones agreden nuestro cuerpo de forma indirecta
+                        causando problemas musculares.
+                        <br>
+                        <br>
+                        Esta App ayuda a los usuarios a encontrar centros de masaje u otros tratamientos según
+                        sus preferencias e intereses.
+                        <br>
+                        <br>
+                        En todos los centros especializados deberían de hacer entrega de un formulario de salud previo
+                        al servicio pero no siempre es así por diversos factores.
+                        <br>
+                        Con Siente Bienestar todo es más sencillo. Aportamos un formulario de salud dónde mediante una
+                        serie de preguntas específicas se crea un codigo QR y PDF.
+                        <br>
+                        Este código se podrá mostrar en todos los centros a los que acudas y los profesionales podrán
+                        ver enfermedades/problemas relevantes que ellos deban saber.
+                        <br>
+                        <br>
+                        Además podrás realizar la reserva online, olvidando tener que llamar por teléfono o presentarte
+                        en el mismo establecimiento.
+                    </p>
+                    <br>
+                    <button type="button"><a
+                            href="https://medium.com/@analiambenavente/ironhack-siente-bienestar-c4d0b91c859b">Ver
+                            proyecto</a></button>
+                </div>
+            </article>
+            <article class="row features" id="features">
                 <div class="col-md-5 proyectoDescripcion">
-                    <h3> LisTravel</h3>
+                    <h4>Rover</h4>
+                    <br>
+                    <p> Se trata de una App dónde los cuidadores de perros se anuncian para ofrecer sus servicios.
+                        <br>
+                        <br>
+                        Alojan a las mascotas de sus clientes en sus casas, sacan al perro a pasear...
+                        En este proyecto tuvimos que añadir una funcionalidad y a través de los resultados obtenidos por
+                        nuestros usuarios, añadimos poder cuidar de roedores y aves también, ya que Rover solo disponía
+                        del cuidado para perros y gatos.
+                    </p>
+                    <br>
+                    <button type="button"><a
+                            href="https://medium.com/@analiambenavente/ironhack-app-rover-b7dae1e02647">Ver
+                            proyecto</a></button>
+                </div>
+                <span class="separadorVertical"></span>
+                <div class="col-md-5 proyectoImagenDinamica">
+                    <img class="mobile-inertia movilTwo" width="30%" src="images/ROVER.png" alt="Teléfono">
+                    <img class="mobile-inertia mobilOne" width="30%" src="images/ROVER 1.png" alt="Teléfono">
+                </div>
+            </article>
+            <article class="row">
+                <div class="col-sm-5 proyectoImagen">
+                    <img src="images/AQUI VA FOTO LISTRAVEL Copy.png" alt="foto proyecto 3" class="fotoProyectoFront">
+                    <img src="images/listravel.png" alt="foto proyecto 3" class="fotoProyectoBack">
+                </div>
+                <span class="separadorVertical"></span>
+                <div class="col-md-5 proyectoDescripcion">
+                    <h4> LisTravel</h4>
+                    <br>
                     <p>Surge de la necesidad de preparar la maleta de manera organizada y así evitar olvidos,
                         guardando todo lo necesario antes de irnos de vacaciones.
+                        <br>
+                        <br>
                         Puedes realizar fotos de tus prendas ó escribir tus productos y seleccionar los artículos cuando
                         los
                         hayas guardado en la maleta.
                     </p>
+                    <br>
                     <button type="button"><a
                             href="https://medium.com/@analiambenavente/ironhack-app-listravel-a55433d4c1bb">Ver
                             proyecto</a></button>
                 </div>
             </article>
 
-            <article class="row features" id="features">
-                <div class="col-md-5 proyectoDescripcion">
-                    <h3>Rover</h3>
-                    <p> Es una App dónde los cuidadores de perros se anuncian para ofrecer sus servicios.
-                        Alojan a las mascotas de sus clientes en sus casas, sacan al perro a pasear...
-                        En este proyecto tuvimos que añadir una funcionalidad y a través de los resultados obtenidos por
-                        nuestros usuarios, añadimos poder cuidar de roedores y aves también, ya que Rover solo disponía
-                        del cuidado para perros y gatos.
-                    </p>
-                    <button type="button"><a
-                            href="https://medium.com/@analiambenavente/ironhack-app-rover-b7dae1e02647">Ver
-                            proyecto</a></button>
-                </div>
-                <div class="col-md-5 proyectoImagen">
-                    <img class="mobile-inertia" width="30%" src="images/Servicio revés.png" alt="Teléfono">
-                    <img class="mobile-inertia mobilOne" width="26%" src="images/Revés 2.png" alt="Teléfono">
-                </div>
-            </article>
-
-            <article class="row">
-                <div class="col-md-5 proyectoImagen">
-                    <img src="images/traficantesdesueños.png" width="100%" alt="foto proyecto 2 traficantes"
-                        class="reveal fadeInUp" data-delay="600ms">
-                </div>
-                <div class="col-md-5 proyectoDescripcion">
-                    <h3>Traficantes de Sueños</h3>
-                    <p> Es una página web que se dedica a la venta de libros on-line.
-                        En este proyecto tuvimos que crear una App a partir de esta web dónde rediseñamos su estructura
-                        y
-                        funcionalidad para hacerlo más accesible.
-                    </p>
-                    <button type="button"><a
-                            href="https://medium.com/@analiambenavente/ironhack-app-traficantes-de-sue%C3%B1os-840b0d5cb467">Ver
-                            proyecto</a></button>
-                </div>
-            </article>
         </section>
+        <div class="separador"></div>
+        <div id="sobreMi" class="cabecerasSeccion">
+            <p>Sobre mi</p>
+            <hr>
+        </div>
+        <section class="container sobreMi">
+            <section class="row descripcion">
+                <div class="col-md-5">
+                    <p>Mi nombre es Analía y tras trabajar varios años como Spa Manager he aprendido la importancia de
+                        trabajar en equipo,
+                        empatizar con el cliente y ser constante cada día.
+                        <br>
+                        <br>
+                        Al cambiar mi carrera profesional y
+                        estudiar
+                        UX/UI volví a encontrar esos valores que puedo aportar
+                        y que tanto importan a día de hoy para hacer un trabajo bien hecho.
+                        <br>
+                        <br>
+                        Tienes que amar lo que
+                        haces y por eso me convertí en UX/UI Designer. </p>
+                </div>
+                <div class="foto col-md-4">
+                    <figure><img src="images/FOTO SOBRE MI.png" alt="foto de Analía"></figure>
+                </div>
+            </section>
+        </section>
+
+        <section class="row herramientas">
+            <div class="col-md-6">
+                <div class="uxUi">
+                    <h4>Herramientas UX</h4>
+                    <img src="images/Group.svg" alt="bombilla">
+                </div>
+                <p>
+                    Empatizar, investigar, idear, prototipar y testear son fundamentales para mi trabajo.
+                    <br>
+                    <br>
+                    Uso las
+                    herramientas que brinda UX: Blueprint, Lean UX Canvas, User Persona, User Flow y muchas más.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div class="uxUi">
+                    <h4>Herramientas UI</h4>
+                    <img src="images/Group 5.svg" alt="bombilla">
+                </div>
+                <p>
+                    Cada día práctico para mejorar con Sketch, Figma, InVision, Keynote.
+                    <br>
+                    <br>
+                    Además utilizo las herramientas que me brinda UI: Moodboard, Style Tiles, Picking Colors, UI
+                    Kit,
+                    entre otras.
+                </p>
+            </div>
+        </section>
+
+        <div class="separador"></div>
+        <div id="contacta" class="cabecerasSeccion">
+            <p>Contacta</p>
+            <hr>
+        </div>
         <footer class="footer">
+            <p>analiambenavente@gmail.com</p>
+            <p>Tlf: 638 750 283</p>
+            <p>Madrid</p>
+            <div class="redesSociales">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/anal%C3%ADambenavente/" class="linkIn"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://medium.com/@analiambenavente" class="medium"><i
+                                class="fab fa-medium-m"></i></a></li>
+                    <li><a href="mailto:analiambenavente@gmail.com" class="google"><i class="fab fa-google"></i></a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </div>
 </body>
